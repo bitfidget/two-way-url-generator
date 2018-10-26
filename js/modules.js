@@ -1,0 +1,18 @@
+exports.modules = [
+	'./js/_intro-mdb-free.js',
+	'./js/vendor/jquery.easing.js',
+	'./js/vendor/velocity.min.js',
+	'./js/vendor/chart.js',
+	'./js/vendor/wow.js',
+	'./js/vendor/scrolling-navbar.js',
+	'./js/vendor/waves.js',
+	'./js/vendor/forms-free.js',
+	'./js/vendor/enhanced-modals.js',
+	// './js/vendor/addons/datatables.js',
+	'./js/src/content/snippets.js',
+	'./js/src/content/summaries.js',
+	'./js/src/cai-dom.js',
+	'./js/src/url-generator.js',
+	'./js/src/brief-generator.js',
+	'./js/src/json-generator.js',
+];

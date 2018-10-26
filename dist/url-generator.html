@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>URL Generator - Cai</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .summary-snippet.hidden {
+            display: none;
+        }
+
+        .summary-snippet.shown {
+            display: block;
+        }
+
+        #generated-url {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+
+        #url-input {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="url-generator__page">
+
+    <!--Main Navigation-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand" href="#"><strong>Cai - URL Generator</strong></a>
+        </nav>
+    </header>
+    <!--Main Navigation-->
+
+    <main>
+        <div class="container">
+            <div class="row mt-5 pt-5 justify-content-center">
+                <div class="col-8 text-center">
+                    <h1>URL Generator</h1>
+                    <p>Choose the instructions for your brief or paste in an existing brief URL to start from there</p>
+                    <div class="md-form input-group">
+                        <input type="text" class="form-control" placeholder="Existing URL" aria-label="Existing URL" id="input-url" aria-describedby="basic-addon2"
+                        />
+                        <div class="input-group-append">
+                            <button class="btn btn-primary m-0" id="btn-url" type="button">GO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+
+                <!-- summary -->
+                <div class="col-8 text-left">
+                    <div class="pb-5 summary-box border-bottom">
+                        <h3>Request summary</h3>
+                        <p>The content change you intend to make will:</p>
+                        <select class="browser-default custom-select" id="select-summary">
+                            <option >Select endpoint</option>
+                        </select>
+                        <div id="wrapper-summary" class="my-5"></div>
+                    </div>
+                </div>
+
+                <!-- snippets -->
+                <div class="col-8 text-left">
+                    <div class="pb-5 my-5 summary-box">
+                        <h3>Please select the required snippets</h3>
+                        <div id="wrapper-snippet"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 text-center">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary" id="btn-preview-url">
+                            Preview URL
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal" id="btn-generate-url">
+                            Generate URL
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade text-center" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="wrapper-url">ERROR</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+                </div>
+                <div class="modal-body">
+                    <div><i class="fa fa-check-circle fa-4x green-text" aria-hidden="true"></i></div>
+                    Copied to your clipboard!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- jsPDF -->
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

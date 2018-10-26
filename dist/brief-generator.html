@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brief Generator - Cai
+    </title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<!-- 
+1. DONE - change the URL query to a proper query and hash the link 
+2. DONE - provide option to reverse the hash to read the url query
+3. DONE - tidy up the generator pages to show the summary according to the end of chat point you've reached
+4. Format the PDF OR print style sheet
+5. DONE - abstract snippets/content into external JSON file 
+ -->
+
+<body class="brief-generator__page">
+
+    <!--Main Navigation-->
+    <header>
+        <img src="img/content/header-print.png" alt="Digital margeting and risk services" class="print-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand" href="#"><strong>Cai - Brief Generator</strong></a>
+        </nav>
+        <div class="print-bar"></div>
+    </header>
+    <!--Main Navigation-->
+
+    <!-- Start your project here-->
+
+    <main>
+        <div class="container">
+            <div class="row mt-5 pt-5 justify-content-center">
+                <div class="col-8">
+                    <h1>This is your brief</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+
+                <!-- summary -->
+                <div class="col-8 text-left">
+                    <div class="pb-5 summary-box border-bottom">
+                        <h3>Based on our chat, the web change you intend to make is:</h3>
+                        <div id="summary-wrapper" class="pt-5">
+                            No summary selected
+                        </div>
+                    </div>
+                </div>
+
+                <!-- snippets -->
+                <div class="col-8 text-left">
+                    <div class="pb-5 my-5 summary-box">
+                        <h3>To execute this change, please:</h3>
+                        <div id="snippet-wrapper"></div>
+                        <p>To help you get started, you can view our <a href="https://digital.westpacgroup.com.au/confluence/display/DQA/Digital+Customer+Facing+Content+%28CFC%29+Framework">list of potential contacts for approval/consultation</a>.</p>
+                        <h3 class="pt-5">Other important information to know:</h3>
+                        <div class="common-summary pt-5" id="common">
+                            <ul>
+                                <li>My advice is only relevant for this specific offer extension request;</li>
+                                <li>If extending the offer is changing numerical data (e.g. dates, rates etc.), ask your Digital
+                                    Producer to consider using the Universal Content Repository; and</li>
+                                <li>All advice I provide is in accordance with Digital’s Customer Facing Content Framework.</li>
+                            </ul>
+                            <p>If you need further information, you can review it <a href="https://digital.westpacgroup.com.au/confluence/display/DQA/Digital+Customer+Facing+Content+%28CFC%29+Framework">here</a>.</p>
+                            <p>If you have any further questions around:</p>
+                            <ul>
+                                <li>The approvals process, please <a href="mailto:digitalriskguardians@westpac.com.au">reach out to the Digital Risk Guardians</a>.
+                                    The process to get a web content change published, ask me “What’s the process to make
+                                    a Web Content Change” or please reach out to your Digital Producer.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8 text-center">
+                        <button type="button" class="btn btn-primary" id="js-download__btn">Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- jsPDF -->
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

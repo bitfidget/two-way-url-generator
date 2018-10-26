@@ -1,0 +1,60 @@
+// Your custom styles
+
+.print-only {
+	display: none;
+}
+
+header {
+	img {
+		display: none;
+	}
+}
+
+.print-bar {
+	display: none;
+}
+
+@media print {
+	.print-only {
+		display: block;
+	}
+
+	header {
+		display: block;
+		width: 100%;
+
+		img {
+			display: block;
+			width: 102%;
+			// background: #123662;
+		}
+	}
+
+	.print-bar {
+		width: 100%;
+		background: #af2616;
+		height: 30px;
+		display: block;
+		color: #fff;
+		padding: 4px 15px;
+	}
+
+	.container,
+	.col-8,
+	.row {
+		width: 100% !important;
+		max-width: 100% !important;
+		flex: none;
+	}
+
+	.btn {
+		display: none;
+	}
+
+	.text-center,
+	.justify-content-center {
+		text-align: left !important;
+		-ms-flex-pack: left !important;
+		justify-content: left !important;
+	}
+}
